@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="icon" href="./assets/img/icon.jpg" />
+  <title>Super Quiz </title>
+</head>
+
+<body>
+
+  <main class="tela-principal">
+
+    <section class='conteudos'>
+
+      <h1>❓ Super Quiz ❓</h1>
+
+      <article class='centro' id='instrucoes'>
+        Bem vind@! Leia a pergunta e clique na resposta certa. Divirta-se.
+      </article>
+
+      <article class='questoes'>
+
+        <header class='questao'>
+          <span id='numQuestao'></span>
+          <h2 id='pergunta'></h2>
+        </header>
+
+        <div class='corpo'>
+          <ol type='A' id='alternativas'>
+            <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+            <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+            <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+          </ol>
+        </div>
+      </article>
+
+      <article id='aviso'>Pergunta <span id='numero'></span> de <span id='total'></span></article>
+
+    </section>
+
+    <footer class="centro"><a class="link" href="https://github.com/HarukaIonaSao">Desenvolvido por Roberta Ribeiro</a>
+      </footer>
+
+  </main>
+
+  <audio preload src="assets/audio/acertou.mp3" id='somAcerto'></audio>
+  <audio preload src="assets/audio/erro.mp3" id='somErro'></audio>
+  <audio preload src="assets/audio/aplausos.mp3" id='somAplausos'></audio>
+
+  <script src="./assets/script.js"></script>
+ 
+
+  <!-- Userway -->
+  <script>
+    (function (d) {
+      var s = d.createElement("script");
+      s.setAttribute("data-account", "GXu4TnQ4yd");
+      s.setAttribute("src", "https://accessibilityserver.org/widget.js");
+      (d.body || d.head).appendChild(s);
+    })(document);
+  </script>
+  <noscript>Please ensure Javascript is enabled for purposes of
+    <a href="https://accessibilityserver.org">website accessibility</a></noscript>
+
+  <div id="root"></div>
+
+  <!-- VLibras -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+  
+</body>
+
+</html>
